@@ -1,23 +1,22 @@
 # vut-izp-proj2
-Simple program that applies operations on sets and relations.
 
-= Projekt 2 - Práce s datovými strukturami =
+# Projekt 2 - Práce s datovými strukturami
 
 Na projektu lze pracovat v týmu 3-5 členů. V týdnu 1.-5.11. se seznamte se zadáním projektu a zformujte si tým, ve kterém chcete na projektu pracovat. Členové týmu musí patřit do stejné skupiny laboratorního cvičení.
 
-== Motivace projektu ==
+# Motivace projektu
 
 V prvním projektu jsme si vyzkoušeli jednoduché práce s textovými řetězci a základními cykly. V tomto projektu spojíme znalosti programování a diskrétní matematiky. Projekt zahrnuje zpracování vstupu, dynamickou alokaci a algoritmy pro průchody v datových strukturách.
 
-== Popis projektu ==
+# Popis projektu 
 
 Cílem projektu je vytvořit program, který bude implementovat základní matematické operace nad množinami a binárními relacemi. Vstupem programu budou textová data reprezentující množiny a relace a zadání operací. Výsledek zpracování bude program tisknout na standardní výstup.
 
-== Detailní specifikace ==
+# Detailní specifikace
 
 Program implementujte ve zdrojovém souboru ''setcal.c'' (Set Calculator). Vstupní data budou čtena ze souboru, jehož jméno bude zadáno argumentem příkazové řádky. Program provádí operace zadané v souboru po řádcích jedním průchodem. Výsledek zpracování každého řádku program tiskne na standardní výstup (tedy počet řádků na výstupu odpovídá počtu řádků vstupního souboru).
 
-=== Překlad a odevzdání zdrojového souboru ===
+## Překlad a odevzdání zdrojového souboru
 
 Odevzdání: Odevzdejte zdrojový soubor ''setcal.c'' prostřednictvím informačního systému.
 
@@ -38,28 +37,28 @@ Textový soubor se skládá ze tří po sobě následujících částí:
 - Definice množin a relací - jeden nebo více řádků začínající "S " nebo "R " a pokračující mezerou oddělenými prvky (řádek začínající "S" indikuje definici množiny, "R" slouží pro definici relace),
 - Příkazy nad množinami a relacemi - jeden nebo více řádků začínající "C " a pokračující identifikátorem příkazu.
 
-==== Univerzum ====
+# Univerzum
 
 Prvky univerza <s>mohou být</s><span style="color:red">jsou</span> řetězce obsahující malá a velká písmena anglické abecedy. Délka řetězce je maximálně 30 znaků. Prvky univerza nesmí obsahovat identifikátory příkazů (viz níže) a klíčová slova true a false. Všechny prvky v množinách a relacích musí patřit do univerza. Příklad:
 <pre>U Apple Lemon Orange Banana Peach</pre>
 
-==== Množiny ====
+# Množiny
 
 Každá množina je definovaná na jednom řádku mezerou oddělenými prvky z univerza. Identifikátorem množiny je číslo řádku, na kterém je množina definovaná (vzhledem k tomu, že na prvním řádku souboru je univerzum, identifikátory množin tedy začínají číslem 2). Identifikátory množin jsou použity v operacích (viz níže). Příklad definice množiny:
 <pre>S Apple Banana Peach</pre>
 
-==== Relace ====
+# Relace
 
 Každá relace je definována výčtem dvojic. Dvojice je ohraničená kulatými závorkami, první a druhý prvek dvojice jsou oddělené mezerou. Jednotlivé dvojice jsou oddělené mezerou. Příklad:
 <pre>R (Apple Banana) (Apple Peach) (Apple Apple)</pre>
 
 
-==== Příkazy ====
+# Příkazy
 
 Každý příkaz je definován na jednom řádku, začíná identifikátorem příkazu a argumenty příkazu jsou oddělené mezerou (od identifikátoru i mezi sebou). Argumenty příkazu jsou číselné identifikátory množin a relací (celá kladná čísla, číslo 1 identifikuje množinu univerza). Příklad:
 <pre>C minus 1 2</pre>
 
-=== Příkazy nad množinami ===
+# Příkazy nad množinami
 
 Příkaz pracuje nad množinami a jeho výsledkem je buď množina (v tom případě tiskne množinu ve stejném formátu jako se očekává ve vstupním souboru, tj. začíná "S " a pokračuje mezerou oddělenými prvky) nebo je výsledkem pravdivostní hodnota (v tom případě tiskne true nebo false na samostatný řádek) nebo je výsledkem přirozené číslo (které se tiskne na samostatný řádek).
 
