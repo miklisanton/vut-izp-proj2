@@ -1,0 +1,6 @@
+U b a c x y z Apple Banana Peach
+S
+R (Apple Banana) (Apple Peach) (Apple Apple)
+R (Apple Banana) (Apple Peach) (Apple Apple)
+S x b z
+R (Apple Banana) (Apple Peach) (Apple Apple)
