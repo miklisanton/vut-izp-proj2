@@ -1,9 +1,5 @@
 # vut-izp-proj2
 Simple program that applies operations on sets and relations.
-'''Legenda:'''
-
-<span style="color:red">Červeně označený text</span> značí změnu zadání. Na změnu zadání bude upozorněno na fóru.<br>
-<span style="color:blue">Modře označený text</span> upřesňuje zadání. Takto označené fráze nebudou mít na hodnocení téměř žádný vliv.<br>
 
 = Projekt 2 - Práce s datovými strukturami =
 
@@ -125,48 +121,3 @@ R (dad boy) (dad girl) (mom boy) (mom girl)
 R (dad man) (boy man) (mom woman) (girl woman)
 S boy girl
 true</pre>
-
-=== Tipy pro implementaci ===
-
-* Vytvořte datový typ pro množinu. Uvažujte předem neznámý počet prvků. Každý prvek (řetězec) by měl být dynamicky alokován.
-* Implementujte funkci pro tisk množiny.
-* Implementujte funkci pro načtení množiny ze souboru do paměti.
-* Vytvořte základní (unární operace) nad množinou.
-* Vytvořte datový typ pro načtení více množin. Implementujte další operace nad množinami.
-* Vytvořte datový typ pro relaci.
-* Vytvořte funkci pro načtení relace ze souboru do paměti.
-* Implementujte operace nad relacemi.
-
-=== Neočekávané chování ===
-
-Na chyby za běhu programu reagujte obvyklým způsobem: Na neočekávaná vstupní data, formát vstupních dat nebo chyby při zpracování operací reagujte přerušením programu se stručným a výstižným chybovým hlášením na příslušný výstup a odpovídajícím návratovým kódem. Hlášení budou v kódování ASCII česky nebo anglicky. Všechna alokovaná paměť musí být uvolněna a otevřené soubory uzavřené.
-
-== Hodnocení ==
-
-Na výsledném hodnocení mají hlavní vliv následující faktory:
-
-# přeložitelnost zdrojového souboru,
-## zdrojový soubor musí být přeložitelný a běžet na GNU/Linux, například na serveru merlin.fit.vutbr.cz (pozn. Kód má být napsán v jazyku C podle standardu ISO C 99, který má fungovat stejně na všech platformách. Jestliže kód nebude fungovat na stroji merlin, nebude fungovat na spoustě dalších platformách).
-# dekompozice problému na podproblémy (vhodné funkce, vhodná délka funkcí a parametry funkcí),
-# správná volba datových typů, tvorba nových typů,
-# správná funkcionalita (bodové hodnocení rostoucí v následujícím pořadí):
-## s možným omezením na velikost množin nebo jejich počet (bez dynamické alokace)
-## neomezené množiny a relace
-## podpora pouze množinových operací
-## podpora relací nad množinami
-# ošetření chybových stavů.
-
-== Prémiové hodnocení ==
-
-Prémiové hodnocení je dobrovolné a lze za něj získat bonusové body. Podmínkou pro udělení prémiových bodů je úspěšná obhajoba projektu a výborné vypracování standardního zadání. Výsledné hodnocení je plně v kompetenci vyučujícího, kterému bude projekt obhajován a který bude projekt hodnotit. Výše prémiových bodů závisí také na sofistikovanosti řešení. Prémiová implementace by měla zahrnovat pokročilé příkazy.
-
-==== Pokročilé příkazy ====
-
-Pokud je výsledkem příkazu relace, tiskne příkaz relaci ve stejném formátu jako ve vstupním souboru (začíná "R ").
-
-* <code>closure_ref R</code> - tiskne reflexivní uzávěr relace R
-* <code>closure_sym R</code> - tiskne symetrický uzávěr relace R
-* <code>closure_trans R</code> - tiskne tranzitivní uzávěr relace R
-* Rozšíření všech příkazů, jejichž výsledkem je množina nebo relace, definuje novou množinu nebo relaci identifikovanou číslem řádku, na kterém se nachází daná operace.
-* Rozšíření všech příkazů, které tisknou true nebo false o další argument N. V případě, že operace končí s výsledkem false, následující řádek, který se zpracovává, bude na řádku N (nikoliv bezprostředně následující). 
-* <code>select A N</code> - vybere náhodný prvek z množiny nebo relace A a tiskne ho. V případě, že je množina A prázdná, přeskočí vykonávání příkazu na řádek N vstupního souboru. N v takovém případě musí označovat existující řádek ve vstupním souboru.
