@@ -1,5 +1,3 @@
-# vut-izp-proj2
-
 # Projekt 2 - Práce s datovými strukturami
 
 Na projektu lze pracovat v týmu 3-5 členů. V týdnu 1.-5.11. se seznamte se zadáním projektu a zformujte si tým, ve kterém chcete na projektu pracovat. Členové týmu musí patřit do stejné skupiny laboratorního cvičení.
@@ -16,7 +14,7 @@ Cílem projektu je vytvořit program, který bude implementovat základní matem
 
 Program implementujte ve zdrojovém souboru ''setcal.c'' (Set Calculator). Vstupní data budou čtena ze souboru, jehož jméno bude zadáno argumentem příkazové řádky. Program provádí operace zadané v souboru po řádcích jedním průchodem. Výsledek zpracování každého řádku program tiskne na standardní výstup (tedy počet řádků na výstupu odpovídá počtu řádků vstupního souboru).
 
-## Překlad a odevzdání zdrojového souboru
+# Překlad a odevzdání zdrojového souboru
 
 Odevzdání: Odevzdejte zdrojový soubor ''setcal.c'' prostřednictvím informačního systému.
 
@@ -24,13 +22,13 @@ Překlad: Program překládejte s následujícími argumenty
 
 <pre>$ gcc -std=c99 -Wall -Wextra -Werror setcal.c -o setcal</pre>
 
-=== Syntax spuštění ===
+# Syntax spuštění
 
 Program se spouští v následující podobě: (./setcal značí umístění a název programu):
 
 <pre>./setcal FILE</pre>
 
-=== Formát vstupního souboru ===
+# Formát vstupního souboru
 
 Textový soubor se skládá ze tří po sobě následujících částí:
 - Definice univerza - jeden řádek začínající "U " a pokračující mezerou oddělenými prvky,
