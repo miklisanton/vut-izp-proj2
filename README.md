@@ -34,9 +34,9 @@ Program se spouští v následující podobě: (./setcal značí umístění a n
 === Formát vstupního souboru ===
 
 Textový soubor se skládá ze tří po sobě následujících částí:
-# Definice univerza - jeden řádek začínající "U " a pokračující mezerou oddělenými prvky,
-# Definice množin a relací - jeden nebo více řádků začínající "S " nebo "R " a pokračující mezerou oddělenými prvky (řádek začínající "S" indikuje definici množiny, "R" slouží pro definici relace),
-# Příkazy nad množinami a relacemi - jeden nebo více řádků začínající "C " a pokračující identifikátorem příkazu.
+- Definice univerza - jeden řádek začínající "U " a pokračující mezerou oddělenými prvky,
+- Definice množin a relací - jeden nebo více řádků začínající "S " nebo "R " a pokračující mezerou oddělenými prvky (řádek začínající "S" indikuje definici množiny, "R" slouží pro definici relace),
+- Příkazy nad množinami a relacemi - jeden nebo více řádků začínající "C " a pokračující identifikátorem příkazu.
 
 ==== Univerzum ====
 
